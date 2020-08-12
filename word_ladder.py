@@ -1,6 +1,8 @@
 from queue import Queue
 
 f = open('words.txt', 'r')
+words = f.read().split("\n")
+f.close()
 
 word_set = set()
 for word in words:
